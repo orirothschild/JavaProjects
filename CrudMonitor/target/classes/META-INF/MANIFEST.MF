@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Built-By: space_moses
+Build-Jdk: 1.8.0_201
+Created-By: Maven Integration for Eclipse
+
