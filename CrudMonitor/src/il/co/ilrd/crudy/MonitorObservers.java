@@ -6,7 +6,7 @@ public class MonitorObservers{
 	public static void main(String[] args) throws IOException, InterruptedException {
 		LogMonitor monitor = new LogMonitor("/var/log/syslog");
 		CRUD<String, Integer> crudFile = new CRUDFile("/home/space_moses/my_log.txt");
-		monitor.addObserver((x, y)->{
+		monitor.addObserver((x, y/*the observer is the x y and nothing else*/)->{
 			try {
 				crudFile.create((String)y);
 			} catch (IOException e) {
